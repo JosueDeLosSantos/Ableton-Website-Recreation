@@ -4,4 +4,4 @@ This is the recreation of the [Ableton website](https://www.ableton.com/en/about
 
 ## Reference image
 
-<img src="./public/C1-Ableton.webp">
+<img width="200" src="./public/C1-Ableton.webp">
