@@ -9,19 +9,19 @@ export default function Navbar() {
 		setShowMore(!showMore);
 	}
 	return (
-		<header className='pt-5 relative tracking-wide'>
+		<header className='pt-5 max-xl:pr-[17px] relative '>
 			<nav aria-label='primary'>
 				<Link
-					className='z-30 absolute top-5 left-0 mb-[2em] mx-5'
+					className='z-30 absolute top-5 left-0 mb-5 max-xl:ml-5 xl:ml-10 mr-8'
 					title='Go to homepage'
 					to='/'
 				>
 					{/* Ableton Logo */}
-					<Logo width={45} height={21} />
+					<Logo />
 				</Link>
 				<div aria-hidden='false'>
-					<ul className='flex pl-[100px] pr-5 font-bold mb-5'>
-						<li className='pl-[10px] xl:ml-[5px] xl:text-xl'>
+					<ul className='flex xl:pl-[140px] max-xl:pl-[100px] max-xl:pr-5 xl:pr-10 font-medium mb-5'>
+						<li className='pr-[10px] xl:mr-[5px] xl:text-xl'>
 							<Link to='#'>Live</Link>
 						</li>
 						<li className='px-[10px] xl:text-xl xl:mx-[5px]'>
@@ -53,10 +53,10 @@ export default function Navbar() {
 								</button>
 							</Link>
 						</li>
-						<li className='pl-[10px] ml-auto xl:text-xl max-xl:text-sm text-blue'>
+						<li className='pl-[10px] xl:pr-[10px] ml-auto xl:text-xl max-xl:text-sm text-blue'>
 							<Link to='#'>Try Live 12 for free</Link>
 						</li>
-						<li className='pl-[10px] xl:ml-[10px] max-xl:ml-[5px] leading-7'>
+						<li className='pl-[10px] xl:ml-[10px] max-xl:ml-[5px] max-xl:text-sm leading-7 xl:relative xl:top-[1px]'>
 							<Link to='#'>Log in or register</Link>
 						</li>
 					</ul>

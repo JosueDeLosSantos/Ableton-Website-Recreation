@@ -1,6 +1,6 @@
 # Ableton Website Recreation
 
-This is the recreation of the [Ableton website](https://www.ableton.com/en/about/) using React. This is also a  challenge from [Frontend Practice](https://www.frontendpractice.com/)
+This is the recreation of the [Ableton website](https://www.ableton.com/en/about/) using React. This is also a challenge from [Frontend Practice](https://www.frontendpractice.com/)
 
 ## Reference image
 

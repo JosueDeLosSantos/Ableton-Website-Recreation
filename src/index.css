@@ -5,6 +5,43 @@
 @layer base {
 	@font-face {
 		font-family: "futura-pt";
+		font-weight: 300;
+		src: url(./assets/fonts/FuturaPTLight.otf);
+	}
+
+	@font-face {
+		font-family: "futura-pt";
+		font-weight: 400;
 		src: url(./assets/fonts/FuturaPTBook.otf);
+	}
+
+	@font-face {
+		font-family: "futura-pt";
+		font-weight: 500;
+		src: url(./assets/fonts/FuturaPTMedium.otf);
+	}
+
+	@font-face {
+		font-family: "futura-pt";
+		font-weight: 600;
+		src: url(./assets/fonts/FuturaPTDemi.otf);
+	}
+
+	@font-face {
+		font-family: "futura-pt";
+		font-weight: 700;
+		src: url(./assets/fonts/FuturaPTBold.otf);
+	}
+
+	@font-face {
+		font-family: "futura-pt";
+		font-weight: 800;
+		src: url(./assets/fonts/FuturaPTExtraBold.otf);
+	}
+
+	@font-face {
+		font-family: "futura-pt";
+		font-weight: 900;
+		src: url(./assets/fonts/FuturaPTHeavy.otf);
 	}
 }
