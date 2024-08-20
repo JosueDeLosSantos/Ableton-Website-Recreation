@@ -9,7 +9,7 @@ export default function Navbar() {
 		setShowMore(!showMore);
 	}
 	return (
-		<header className='pt-5 max-xl:pr-[17px] relative '>
+		<header className='pt-5 pr-[15px] relative overflow-visible z-[35]'>
 			<nav aria-label='primary'>
 				<Link
 					className='z-30 absolute top-5 left-0 mb-5 max-xl:ml-5 xl:ml-10 mr-8'
@@ -56,7 +56,7 @@ export default function Navbar() {
 						<li className='pl-[10px] xl:pr-[10px] ml-auto xl:text-xl max-xl:text-sm text-blue'>
 							<Link to='#'>Try Live 12 for free</Link>
 						</li>
-						<li className='pl-[10px] xl:ml-[10px] max-xl:ml-[5px] max-xl:text-sm leading-7 xl:relative xl:top-[1px]'>
+						<li className='pl-[10px] xl:ml-[10px] font-normal max-xl:ml-[5px] max-xl:text-sm leading-7 xl:relative xl:top-[1px]'>
 							<Link to='#'>Log in or register</Link>
 						</li>
 					</ul>

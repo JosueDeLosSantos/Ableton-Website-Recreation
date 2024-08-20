@@ -45,3 +45,13 @@
 		src: url(./assets/fonts/FuturaPTHeavy.otf);
 	}
 }
+
+* {
+	box-sizing: border-box !important;
+}
+
+body {
+	position: relative;
+	width: 100vw;
+	margin: 0;
+}
