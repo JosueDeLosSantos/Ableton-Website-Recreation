@@ -9,7 +9,7 @@ export default function Navbar() {
 		setShowMore(!showMore);
 	}
 	return (
-		<header className='pt-5 pr-[15px] relative overflow-visible z-[35]'>
+		<header className='pt-5 lg:max-2xl:pr-[15px] relative overflow-visible'>
 			<nav aria-label='primary'>
 				<Link
 					className='z-30 absolute top-5 left-0 mb-5 max-xl:ml-5 xl:ml-10 mr-8'
@@ -19,32 +19,35 @@ export default function Navbar() {
 					{/* Ableton Logo */}
 					<Logo />
 				</Link>
-				<div aria-hidden='false'>
-					<ul className='flex xl:pl-[140px] max-xl:pl-[100px] max-xl:pr-5 xl:pr-10 font-medium mb-5'>
-						<li className='pr-[10px] xl:mr-[5px] xl:text-xl'>
+				<div
+					className='max-lg:absolute max-lg:top-0 max-lg:px-[15px] max-lg:pt-[70px] lg:bg-white max-lg:bg-blue max-lg:text-white max-lg:tracking-wide'
+					aria-hidden='false'
+				>
+					<ul className='flex max-lg:flex-col xl:pl-[140px] xl:text-xl max-lg:pl-0 max-xl:pl-[100px] max-xl:pr-5 xl:pr-10 lg:font-medium lg:mb-5 max-lg:text-xl'>
+						<li className='pr-[10px] xl:mr-[5px] max-lg:mb-5'>
 							<Link to='#'>Live</Link>
 						</li>
-						<li className='px-[10px] xl:text-xl xl:mx-[5px]'>
+						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Push</Link>
 						</li>
-						<li className='px-[10px] xl:text-xl xl:mx-[5px]'>
+						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Note</Link>
 						</li>
-						<li className='px-[10px] xl:text-xl xl:mx-[5px]'>
+						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Link</Link>
 						</li>
-						<li className='px-[10px] xl:text-xl xl:mx-[5px]'>
+						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Shop</Link>
 						</li>
-						<li className='px-[10px] xl:text-xl xl:mx-[5px]'>
+						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Packs</Link>
 						</li>
-						<li className='px-[10px] xl:text-xl xl:mx-[5px]'>
+						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Help</Link>
 						</li>
 						<li
 							onClick={handleMore}
-							className='px-[10px] xl:text-xl xl:mx-[5px]'
+							className='px-[10px] max-xl:mx-[5px] xl:mx-[10px] max-lg:hidden'
 						>
 							<Link to='#'>
 								<button className='flex'>
@@ -53,54 +56,54 @@ export default function Navbar() {
 								</button>
 							</Link>
 						</li>
-						<li className='pl-[10px] xl:pr-[10px] ml-auto xl:text-xl max-xl:text-sm text-blue'>
+						<li className='lg:pl-[10px] max-lg:mb-5 xl:pr-[10px] lg:ml-auto lg:max-xl:text-sm lg:text-blue'>
 							<Link to='#'>Try Live 12 for free</Link>
 						</li>
-						<li className='pl-[10px] xl:ml-[10px] font-normal max-xl:ml-[5px] max-xl:text-sm leading-7 xl:relative xl:top-[1px]'>
+						<li className='lg:pl-[10px] xl:ml-[10px] max-lg:mb-[14px] font-normal lg:max-xl:ml-[5px] max-xl:text-sm leading-7 xl:relative xl:top-[1px]'>
 							<Link to='#'>Log in or register</Link>
 						</li>
 					</ul>
 					{showMore && (
-						<div className='xl:pt-[27px] max-xl:pt-[10px] xl:px-[40px] max-xl:px-[20px] xl:pb-[55px] max-xl:pb-[30px]'>
-							<section className='leading-6'>
-								<h3 className='xl:pb-[9px] max-xl:pb-0.5 font-bold text-2xl'>
+						<div className='xl:pt-[27px] lg:max-xl:pt-[10px] xl:px-[40px] lg:max-xl:px-[20px] xl:pb-[55px] lg:max-xl:pb-[30px]'>
+							<section className='leading-6 max-lg:pt-[10px]'>
+								<h3 className='xl:pb-[9px] max-lg:pb-[10px] lg:max-xl:pb-[2px] lg:font-medium max-lg:text-xl lg:max-xl:text-2xl xl:text-3xl'>
 									More on Ableton.com:
 								</h3>
-								<ul className='font-normal flex'>
-									<li className='pr-[10px]'>
+								<ul className='flex max-lg:flex-col xl:text-xl max-lg:text-sm'>
+									<li className='pr-[10px] xl:mr-[5px] 2xl:mr-[10px] max-lg:mb-[14px]'>
 										<Link to='#'>Blog</Link>
 									</li>
-									<li className='px-[10px]'>
+									<li className='lg:px-[10px] xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-[14px]'>
 										<Link to='#'>Ableton for the Classroom</Link>
 									</li>
-									<li className='px-[10px]'>
+									<li className='lg:px-[10px] xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-[14px]'>
 										<Link to='#'>
 											Ableton for Colleges and Universities
 										</Link>
 									</li>
-									<li className='px-[10px]'>
+									<li className='lg:px-[10px] xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-[14px]'>
 										<Link to='#'>Certified Training</Link>
 									</li>
-									<li className='px-[10px]'>
+									<li className='lg:px-[10px] xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-[14px]'>
 										<Link to='#'>About Ableton</Link>
 									</li>
-									<li className='px-[10px]'>
+									<li className='lg:px-[10px] xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-[14px]'>
 										<Link to='#'>Jobs</Link>
 									</li>
-									<li className='pl-[10px]'>
+									<li className='lg:pl-[10px] xl:ml-[5px] 2xl:ml-[10px] max-lg:mb-[14px]'>
 										<Link to='#'>Apprenticeships</Link>
 									</li>
 								</ul>
 							</section>
 							<section className='xl:pt-[42px] max-xl:pt-[25px]'>
-								<h3 className='xl:pb-[9px] max-xl:pb-0.5 font-bold text-2xl'>
+								<h3 className='xl:pb-[9px] max-xl:pb-[2px] font-medium max-xl:text-2xl xl:text-3xl'>
 									More from Ableton:
 								</h3>
-								<ul className='mx-[-20px] flex'>
+								<ul className='mx-[-20px] grid grid-cols-4 xl:text-xl'>
 									<li className='px-5'>
 										<Link to='#'>
 											<div>
-												<h4 className='font-bold'>Loop</h4>
+												<h4 className='font-medium'>Loop</h4>
 												<p>
 													Watch Talks, Performances and Features
 													from Ableton's Summit for Music Makers
@@ -111,7 +114,7 @@ export default function Navbar() {
 									<li className='px-5'>
 										<Link to='#'>
 											<div>
-												<h4 className='font-bold'>
+												<h4 className='font-medium'>
 													Learning Music
 												</h4>
 												<p>
@@ -124,7 +127,7 @@ export default function Navbar() {
 									<li className='px-5'>
 										<Link to='#'>
 											<div>
-												<h4 className='font-bold'>
+												<h4 className='font-medium'>
 													Learning Synths
 												</h4>
 												<p>
@@ -138,7 +141,7 @@ export default function Navbar() {
 									<li className='px-5'>
 										<Link to='#'>
 											<div>
-												<h4 className='font-bold'>
+												<h4 className='font-medium'>
 													Making Music
 												</h4>
 												<p>
