@@ -20,7 +20,7 @@ export default function Navbar() {
 					<Logo />
 				</Link>
 				<div
-					className='max-lg:absolute max-lg:top-0 max-lg:px-[15px] max-lg:pt-[70px] lg:bg-white max-lg:bg-blue max-lg:text-white max-lg:tracking-wide'
+					className='max-lg:absolute max-lg:top-0 max-lg:px-[15px] max-lg:pt-[70px] lg:bg-white max-lg:bg-blue w-full h-fit max-lg:text-white max-lg:tracking-wide'
 					aria-hidden='false'
 				>
 					<ul className='flex max-lg:flex-col xl:pl-[140px] xl:text-xl max-lg:pl-0 max-xl:pl-[100px] max-xl:pr-5 xl:pr-10 lg:font-medium lg:mb-5 max-lg:text-xl'>
@@ -95,63 +95,67 @@ export default function Navbar() {
 									</li>
 								</ul>
 							</section>
-							<section className='xl:pt-[42px] max-xl:pt-[25px]'>
-								<h3 className='xl:pb-[9px] max-xl:pb-[2px] font-medium max-xl:text-2xl xl:text-3xl'>
+							<section className='xl:pt-[42px] max-lg:pt-[10px] lg:max-xl:pt-[25px]'>
+								<h3 className='xl:pb-[9px] max-lg:pb-[10px] lg:max-xl:pb-[2px] font-medium max-lg:text-xl lg:max-xl:text-2xl xl:text-3xl'>
 									More from Ableton:
 								</h3>
-								<ul className='mx-[-20px] grid grid-cols-4 xl:text-xl'>
-									<li className='px-5'>
-										<Link to='#'>
-											<div>
-												<h4 className='font-medium'>Loop</h4>
-												<p>
-													Watch Talks, Performances and Features
-													from Ableton's Summit for Music Makers
-												</p>
-											</div>
-										</Link>
-									</li>
-									<li className='px-5'>
-										<Link to='#'>
-											<div>
-												<h4 className='font-medium'>
-													Learning Music
-												</h4>
-												<p>
-													Learn the fundamentals of music making
-													right in your browser.
-												</p>
-											</div>
-										</Link>
-									</li>
-									<li className='px-5'>
-										<Link to='#'>
-											<div>
-												<h4 className='font-medium'>
-													Learning Synths
-												</h4>
-												<p>
-													Get started with synthesis using a
-													web-based synth and accompanying
-													lessons.
-												</p>
-											</div>
-										</Link>
-									</li>
-									<li className='px-5'>
-										<Link to='#'>
-											<div>
-												<h4 className='font-medium'>
-													Making Music
-												</h4>
-												<p>
-													Some tips from 74 Creative Strategies
-													for Electronic Producers.
-												</p>
-											</div>
-										</Link>
-									</li>
-								</ul>
+								<div className='overflow-x-auto overflow-scroll'>
+									<ul className='max-lg:mx-[-10px] lg:mx-[-20px] navbar-grid max-lg:text-sm xl:text-xl'>
+										<li className='max-lg:px-[10px] lg:px-5'>
+											<Link to='#'>
+												<div>
+													<h4 className='font-medium'>Loop</h4>
+													<p>
+														Watch Talks, Performances and
+														Features from Ableton's Summit for
+														Music Makers
+													</p>
+												</div>
+											</Link>
+										</li>
+										<li className='max-lg:px-[10px] lg:px-5'>
+											<Link to='#'>
+												<div>
+													<h4 className='font-medium'>
+														Learning Music
+													</h4>
+													<p>
+														Learn the fundamentals of music
+														making right in your browser.
+													</p>
+												</div>
+											</Link>
+										</li>
+										<li className='max-lg:px-[10px] lg:px-5'>
+											<Link to='#'>
+												<div>
+													<h4 className='font-medium'>
+														Learning Synths
+													</h4>
+													<p>
+														Get started with synthesis using a
+														web-based synth and accompanying
+														lessons.
+													</p>
+												</div>
+											</Link>
+										</li>
+										<li className='max-lg:px-[10px] lg:px-5'>
+											<Link to='#'>
+												<div>
+													<h4 className='font-medium'>
+														Making Music
+													</h4>
+													<p>
+														Some tips from 74 Creative
+														Strategies for Electronic
+														Producers.
+													</p>
+												</div>
+											</Link>
+										</li>
+									</ul>
+								</div>
 							</section>
 						</div>
 					)}
