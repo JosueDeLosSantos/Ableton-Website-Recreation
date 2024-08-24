@@ -3,11 +3,21 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/Logo";
 import PlusSign from "../assets/PlusSign";
 import MinusSign from "../assets/MinusSign";
+import MenuArrowDown from "../assets/MenuArrowDown";
+import MenuArrowUp from "../assets/MenuArrowUp";
+import useWindowSize from "../hooks/windowSize";
 export default function Navbar() {
 	const [showMore, setShowMore] = useState(false);
+	const [navDrawer, setNavDrawer] = useState(false);
+	const { windowWidth } = useWindowSize();
 	function handleMore() {
 		setShowMore(!showMore);
 	}
+	function handleNavDrawer() {
+		setNavDrawer(!navDrawer);
+	}
+	// className={`mt-2 flex w-full cursor-pointer items-center rounded p-2 font-medium hover:bg-purple-600 hover:text-white dark:hover:bg-blue-100 dark:hover:text-purple-700 ${(location.pathname === "/posts" && "bg-blue-100 text-purple-700 dark:bg-purple-500  dark:text-purple-100") || "bg-slate-100  dark:bg-slate-700 "}`}
+
 	return (
 		<header className='pt-5 lg:max-2xl:pr-[15px] relative overflow-visible'>
 			<nav aria-label='primary'>
@@ -17,10 +27,24 @@ export default function Navbar() {
 					to='/'
 				>
 					{/* Ableton Logo */}
-					<Logo />
+					<Logo navDrawer={navDrawer} />
 				</Link>
+				<button
+					onClick={handleNavDrawer}
+					className={`lg:hidden z-30 absolute top-5 left-28 text-xl flex ${
+						(navDrawer && "text-white") || "text-black"
+					}`}
+				>
+					Menu
+					<span className='mt-[10px] ml-[10px]'>
+						{navDrawer ? <MenuArrowUp /> : <MenuArrowDown />}
+					</span>
+				</button>
+
 				<div
-					className='max-lg:absolute max-lg:top-0 max-lg:px-[15px] max-lg:pt-[70px] lg:bg-white max-lg:bg-blue w-full h-fit max-lg:text-white max-lg:tracking-wide'
+					className={`max-lg:absolute max-lg:top-0 max-lg:px-[15px] max-lg:pt-[70px] lg:bg-white max-lg:bg-blue w-full h-fit max-lg:text-white max-lg:tracking-wide transition-all duration-500 ${
+						!navDrawer && windowWidth < 1024 && "-translate-y-full"
+					}`}
 					aria-hidden='false'
 				>
 					<ul className='flex max-lg:flex-col xl:pl-[140px] xl:text-xl max-lg:pl-0 max-xl:pl-[100px] max-xl:pr-5 xl:pr-10 lg:font-medium lg:mb-5 max-lg:text-xl'>
@@ -63,7 +87,7 @@ export default function Navbar() {
 							<Link to='#'>Log in or register</Link>
 						</li>
 					</ul>
-					{showMore && (
+					{(showMore || windowWidth < 1024) && (
 						<div className='xl:pt-[27px] lg:max-xl:pt-[10px] xl:px-[40px] lg:max-xl:px-[20px] xl:pb-[55px] lg:max-xl:pb-[30px]'>
 							<section className='leading-6 max-lg:pt-[10px]'>
 								<h3 className='xl:pb-[9px] max-lg:pb-[10px] lg:max-xl:pb-[2px] lg:font-medium max-lg:text-xl lg:max-xl:text-2xl xl:text-3xl'>
@@ -99,7 +123,7 @@ export default function Navbar() {
 								<h3 className='xl:pb-[9px] max-lg:pb-[10px] lg:max-xl:pb-[2px] font-medium max-lg:text-xl lg:max-xl:text-2xl xl:text-3xl'>
 									More from Ableton:
 								</h3>
-								<div className='overflow-x-auto overflow-scroll'>
+								<div className='max-lg:overflow-x-auto max-lg:overflow-scroll scrollable-content max-lg:mb-5'>
 									<ul className='max-lg:mx-[-10px] lg:mx-[-20px] navbar-grid max-lg:text-sm xl:text-xl'>
 										<li className='max-lg:px-[10px] lg:px-5'>
 											<Link to='#'>

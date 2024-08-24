@@ -6,7 +6,7 @@ export default function Layout() {
 	return (
 		<div className='max-w-[100rem] mx-auto bg-white'>
 			<Navbar />
-			<main className='min-h-screen'>
+			<main className='min-h-screen mt-12'>
 				<Outlet />
 			</main>
 			<Footer />
