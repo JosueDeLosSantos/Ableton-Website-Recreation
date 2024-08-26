@@ -3,6 +3,8 @@ import ArrowRight from "../assets/ArrowRight";
 import FacebookIcon from "../assets/FacebookIcon";
 import TwitterXIcon from "../assets/TwitterXIcon";
 import YouTubeIcon from "../assets/YouTubeIcon";
+import InstagramIcon from "../assets/InstagramIcon";
+import TiktokIcon from "../assets/TiktokIcon";
 
 export default function Footer() {
 	return (
@@ -15,13 +17,11 @@ export default function Footer() {
 						alt='Ableton'
 					/>
 				</div>
-				<div className='flex max-lg:flex-col lg:flex-row-reverse'>
-					<div className='w-[40%]'>
+				<div className='flex max-lg:flex-col lg:flex-row-reverse lg:gap-[10px]'>
+					<div className='lg:w-[40%] pb-[4.16667vw]'>
 						<label>
-							<span className='block font-medium'>
-								Sign up to our newsletter
-							</span>
-							<span>
+							<h3 className='font-medium'>Sign up to our newsletter</h3>
+							<span className='block'>
 								Enter your email address to stay up to date with the
 								latest offers, tutorials, downloads, surveys and more.
 							</span>
@@ -47,7 +47,7 @@ export default function Footer() {
 							</form>
 						</div>
 					</div>
-					<div className='w-[30%] lg:order-1'>
+					<div className='w-[30%] lg:order-1 pb-[4.16667vw]'>
 						<ul>
 							<li className='flex'>
 								<Link to='#'>Register Live or Push</Link>
@@ -68,25 +68,57 @@ export default function Footer() {
 								</span>
 							</li>
 						</ul>
-						<ul className='flex'>
-							<li>
+						<ul className='flex gap-3 pt-2'>
+							<li className='pt-2'>
 								<Link to='#'>
 									<FacebookIcon />
 								</Link>
 							</li>
-							<li>
+							<li className='pt-2'>
 								<Link to='#'>
 									<TwitterXIcon />
 								</Link>
 							</li>
-							<li>
+							<li className='pt-2'>
 								<Link to='#'>
 									<YouTubeIcon />
 								</Link>
 							</li>
+							<li className='pt-2'>
+								<Link to='#'>
+									<InstagramIcon />
+								</Link>
+							</li>
+							<li>
+								<Link to='#'>
+									<TiktokIcon />
+								</Link>
+							</li>
 						</ul>
 					</div>
-					<div className='w-[30%]'></div>
+					<div className='w-[30%] pb-[4.16667vw]'>
+						<h3 className='font-medium'>Education</h3>
+						<ul>
+							<li className='flex'>
+								<Link to='#'>Offers for students and teachers</Link>
+								<span>
+									<ArrowRight />
+								</span>
+							</li>
+							<li className='flex'>
+								<Link to='#'>Ableton for the Classroom</Link>
+								<span>
+									<ArrowRight />
+								</span>
+							</li>
+							<li className='flex'>
+								<Link to='#'>Ableton for Colleges and Universities</Link>
+								<span>
+									<ArrowRight />
+								</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</footer>
