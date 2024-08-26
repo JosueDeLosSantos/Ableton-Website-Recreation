@@ -1,9 +1,15 @@
-export default function MenuArrowDown() {
+export default function MenuArrowDown({
+	width = "12",
+	height = "12"
+}: {
+	width?: string;
+	height?: string;
+}) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
-			width='12'
-			height='12'
+			width={width}
+			height={height}
 			viewBox='0 0 24 24'
 			style={{ fill: "#000000", transform: "", msFilter: "" }}
 		>
