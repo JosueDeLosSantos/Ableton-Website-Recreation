@@ -16,7 +16,6 @@ export default function Navbar() {
 	function handleNavDrawer() {
 		setNavDrawer(!navDrawer);
 	}
-	// className={`mt-2 flex w-full cursor-pointer items-center rounded p-2 font-medium hover:bg-purple-600 hover:text-white dark:hover:bg-blue-100 dark:hover:text-purple-700 ${(location.pathname === "/posts" && "bg-blue-100 text-purple-700 dark:bg-purple-500  dark:text-purple-100") || "bg-slate-100  dark:bg-slate-700 "}`}
 
 	return (
 		<header className='pt-5 lg:max-2xl:pr-[15px] relative overflow-visible'>
@@ -42,7 +41,7 @@ export default function Navbar() {
 				</button>
 
 				<div
-					className={`max-lg:absolute max-lg:top-0 max-lg:px-[15px] max-lg:pt-[70px] lg:bg-white max-lg:bg-blue w-full h-fit max-lg:text-white max-lg:tracking-wide transition-all duration-500 ${
+					className={`max-lg:absolute max-lg:top-0 max-lg:px-[15px] max-lg:pt-[70px] lg:bg-white max-lg:bg-blue max-w-full h-fit max-lg:text-white max-lg:tracking-wide transition-all duration-500 ${
 						!navDrawer && windowWidth < 1024 && "-translate-y-full"
 					}`}
 					aria-hidden='false'
@@ -51,27 +50,27 @@ export default function Navbar() {
 						<li className='pr-[10px] xl:mr-[5px] max-lg:mb-5'>
 							<Link to='#'>Live</Link>
 						</li>
-						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
+						<li className='lg:px-[10px] xl:max-2xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Push</Link>
 						</li>
-						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
+						<li className='lg:px-[10px] xl:max-2xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Note</Link>
 						</li>
-						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
+						<li className='lg:px-[10px] xl:max-2xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Link</Link>
 						</li>
-						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
+						<li className='lg:px-[10px] xl:max-2xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Shop</Link>
 						</li>
-						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
+						<li className='lg:px-[10px] xl:max-2xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Packs</Link>
 						</li>
-						<li className='lg:px-[10px] lg:max-xl:mx-[5px] xl:mx-[10px] max-lg:mb-5'>
+						<li className='lg:px-[10px] xl:max-2xl:mx-[5px] 2xl:mx-[10px] max-lg:mb-5'>
 							<Link to='#'>Help</Link>
 						</li>
 						<li
 							onClick={handleMore}
-							className='px-[10px] max-xl:mx-[5px] xl:mx-[10px] max-lg:hidden'
+							className='px-[10px] xl:max-2xl:mx-[5px] 2xl:mx-[10px] max-lg:hidden'
 						>
 							<Link to='#'>
 								<button className='flex'>
@@ -83,7 +82,7 @@ export default function Navbar() {
 						<li className='lg:pl-[10px] max-lg:mb-5 xl:pr-[10px] lg:ml-auto lg:max-xl:text-sm lg:text-blue'>
 							<Link to='#'>Try Live 12 for free</Link>
 						</li>
-						<li className='lg:pl-[10px] xl:ml-[10px] max-lg:mb-[14px] font-normal lg:max-xl:ml-[5px] max-xl:text-sm leading-7 xl:relative xl:top-[1px]'>
+						<li className='lg:pl-[10px] xl:ml-[10px] max-lg:mb-[14px] font-normal lg:max-xl:ml-[5px] max-xl:text-sm xl:text-base xl:leading-7 leading-7 xl:relative xl:top-[1px]'>
 							<Link to='#'>Log in or register</Link>
 						</li>
 					</ul>

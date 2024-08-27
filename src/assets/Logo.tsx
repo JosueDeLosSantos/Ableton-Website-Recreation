@@ -1,12 +1,20 @@
-export default function Logo({ navDrawer }: { navDrawer: boolean }) {
+export default function Logo({
+	navDrawer = false,
+	width = "45",
+	height = "21"
+}: {
+	navDrawer?: boolean;
+	width?: string;
+	height?: string;
+}) {
 	return (
 		<svg
 			role='img'
 			aria-label='Logo Ableton'
 			fill='#000000'
 			xmlns='http://www.w3.org/2000/svg'
-			width={45}
-			height={21}
+			width={width}
+			height={height}
 			className={`w-[3.75em] h-[1.75em] ${
 				(navDrawer && "max-lg:fill-white") || "max-lg:fill-black"
 			}`}

@@ -1,5 +1,5 @@
 export default function MenuArrowDown({
-	width = "12",
+	width = "9",
 	height = "12"
 }: {
 	width?: string;

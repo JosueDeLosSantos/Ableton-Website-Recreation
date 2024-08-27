@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import Logo from "../../public/ableton.svg";
 import ArrowRight from "../assets/ArrowRight";
-import MenuArrowDown from "../assets/MenuArrowDown";
+// import MenuArrowDown from "../assets/MenuArrowDown";
 import FacebookIcon from "../assets/FacebookIcon";
 import TwitterXIcon from "../assets/TwitterXIcon";
 import YouTubeIcon from "../assets/YouTubeIcon";
@@ -10,8 +11,8 @@ import TiktokIcon from "../assets/TiktokIcon";
 export default function Footer() {
 	return (
 		<footer>
-			<div className='px-[8.33333vw]'>
-				<div className='pb-[4.16667vw]'>
+			<div className='max-xl:px-[8.33333vw] xl:px-[133.33333px]'>
+				<div className='max-xl:pb-[4.16667vw] xl:pb-[66.66667px]'>
 					<img
 						className='max-lg:w-[122px] lg:w-[188px]'
 						src='https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-wordmark.c025e3df71b3.svg'
@@ -19,7 +20,7 @@ export default function Footer() {
 					/>
 				</div>
 				<div className='flex max-lg:flex-col lg:flex-row-reverse lg:gap-[10px]'>
-					<div className='lg:w-[40%] pb-[4.16667vw]'>
+					<div className='lg:w-[40%] max-xl:pb-[4.16667vw] xl:pb-[66.66667px]'>
 						<label>
 							<h3 className='font-medium'>Sign up to our newsletter</h3>
 							<span className='block'>
@@ -27,7 +28,7 @@ export default function Footer() {
 								latest offers, tutorials, downloads, surveys and more.
 							</span>
 						</label>
-						<div className='w-full'>
+						<div className='max-w-full'>
 							<form className='max-xl:mt-4 xl:mt-5'>
 								<div className='flex'>
 									<div className='flex-auto'>
@@ -48,7 +49,7 @@ export default function Footer() {
 							</form>
 						</div>
 					</div>
-					<div className='lg:w-[30%] lg:order-1 pb-[4.16667vw]'>
+					<div className='lg:w-[30%] lg:order-1 max-xl:pb-[4.16667vw] xl:pb-[66.66667px]'>
 						<ul>
 							<li className='flex'>
 								<Link to='#'>Register Live or Push</Link>
@@ -97,7 +98,7 @@ export default function Footer() {
 							</li>
 						</ul>
 					</div>
-					<div className='lg:w-[30%] pb-[4.16667vw]'>
+					<div className='lg:w-[30%] max-xl:pb-[4.16667vw] xl:pb-[66.66667px]'>
 						<h3 className='font-medium'>Education</h3>
 						<ul>
 							<li className='flex'>
@@ -122,7 +123,7 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className='flex max-lg:flex-col lg:flex-row'>
-					<div className='lg:w-[30%] pb-[4.16667vw]'>
+					<div className='lg:w-[30%] max-xl:pb-[4.16667vw] xl:pb-[66.66667px]'>
 						<h3 className='font-medium'>Community</h3>
 						<ul>
 							<li className='flex'>
@@ -145,45 +146,40 @@ export default function Footer() {
 							</li>
 						</ul>
 					</div>
-					<div className='lg:w-[40%] pb-[4.16667vw]'>
+					<div className='lg:w-[40%] max-xl:pb-[4.16667vw] xl:pb-[66.66667px]'>
 						<h3 className='font-medium'>Language and Location</h3>
 						<div className='mt-[10.5px] text-sm flex gap-[2px] max-[400px]:flex-col'>
 							<div className='w-[35%] max-w-[115px]'>
-								<div>
-									<form
-										className='relative'
-										action='/set-language/'
-										method='POST'
+								<form
+									className='relative arrow-down'
+									action='/set-language/'
+									method='POST'
+								>
+									<label className='hidden' htmlFor='language-chooser'>
+										Language
+									</label>
+									<select
+										className='h-[1.875rem] appearance-none w-full bg-neutral pl-2'
+										name='language'
+										id='language-chooser'
 									>
-										<label
-											className='hidden'
-											htmlFor='language-chooser'
-										>
-											Language
-										</label>
-										<select
-											className='h-[1.875rem] appearance-none w-full bg-neutral pl-2'
-											name='language'
-											id='language-chooser'
-										>
-											<option value='en' selected={true}>
-												English
-											</option>
-											<option value='de'>Deutsch</option>
-											<option value='fr'>Français</option>
-											<option value='ja'>日本語</option>
-											<option value='zh-cn'>简体中文</option>
-											<option value='es'>Español</option>
-										</select>
-										<div className='absolute top-[10px] right-[10px]'>
-											<MenuArrowDown width='9' height='9' />
-										</div>
-									</form>
-								</div>
+										<option value='en' defaultValue={1}>
+											English
+										</option>
+										<option value='de'>Deutsch</option>
+										<option value='fr'>Français</option>
+										<option value='ja'>日本語</option>
+										<option value='zh-cn'>简体中文</option>
+										<option value='es'>Español</option>
+									</select>
+									{/* <div className='absolute top-[10px] right-[10px] z-10'>
+										<MenuArrowDown width='9' height='9' />
+									</div> */}
+								</form>
 							</div>
 							<div className='w-[65%] max-w-[200px]'>
 								<div>
-									<form className='relative'>
+									<form className='relative arrow-down'>
 										<label
 											className='hidden'
 											htmlFor='id_location_chooser-country_code'
@@ -191,7 +187,7 @@ export default function Footer() {
 											Country or Region
 										</label>
 										<select
-											className='h-[1.875rem] appearance-none w-full bg-neutral pl-2'
+											className='h-[1.875rem] appearance-none w-full pl-2 bg-neutral'
 											name='country_code'
 											required={true}
 										>
@@ -294,7 +290,7 @@ export default function Footer() {
 												<option value='dk'>Denmark</option>
 												<option value='dj'>Djibouti</option>
 												<option value='dm'>Dominica</option>
-												<option value='do' selected={true}>
+												<option value='do' defaultValue={1}>
 													Dominican Republic
 												</option>
 												<option value='ec'>Ecuador</option>
@@ -562,13 +558,44 @@ export default function Footer() {
 												<option value='zw'>Zimbabwe</option>
 											</optgroup>
 										</select>
-										<div className='absolute top-[10px] right-[10px]'>
+										{/* <div className='absolute top-[10px] right-[10px]'>
 											<MenuArrowDown width='9' height='9' />
-										</div>
+										</div> */}
 									</form>
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div className='flex max-lg:flex-col lg:flex-row xl:pb-[133.33333px] max-xl:pb-[8.33333vw] lg:justify-between text-sm font-medium'>
+					<div className='lg:mt-4'>
+						<ul className='flex max-lg:flex-col lg:flex-row lg:gap-[14px] max-lg:gap-[7px] max-lg:pb-[7px]'>
+							<li>
+								<Link to='#'>Contact Us</Link>
+							</li>
+							<li>
+								<Link to='#'>Press Resources</Link>
+							</li>
+							<li>
+								<Link to='#'>Legal Info</Link>
+							</li>
+							<li>
+								<Link to='#'>Privacy Policy</Link>
+							</li>
+							<li>
+								<Link to='#'>Cookie Settings</Link>
+							</li>
+							<li>
+								<Link to='#'>Imprint</Link>
+							</li>
+						</ul>
+					</div>
+					<div className='flex w-fit gap-[14px] lg:mt-4 max-lg:mt-[8.33333vw] max-lg:flex-row-reverse'>
+						<span>Made in Berlin</span>
+						<Link title='Go to homepage' to='/'>
+							{/* Ableton Logo */}
+							<img src={Logo} />
+						</Link>
 					</div>
 				</div>
 			</div>
