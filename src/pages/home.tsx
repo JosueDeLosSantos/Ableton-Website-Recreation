@@ -9,11 +9,11 @@ export default function Home() {
 	const { windowWidth } = useWindowSize();
 	return (
 		<>
-			<div className='grid grid-cols-12 grid-rows-10 pb-[8.33333vw] 2xl:pb-[133.33333px]'>
-				<div className='row-start-1 row-end-8 col-start-1 col-end-8'>
-					<article className='h-[38.83333vw] relative max-h-[620px] bg-cover bg-[url("src/assets/images/home/Public-beta.avif")]'>
+			<div className='grid grid-cols-12 max-md:grid-rows-19 md:grid-rows-10 md:pb-[8.33333vw] 2xl:pb-[133.33333px]'>
+				<div className='row-start-1 row-end-8 col-start-1 col-end-13 md:col-end-8'>
+					<article className='md:h-[38.83333vw] max-md:h-[70.66667vw] relative max-h-[620px] bg-cover bg-[url("src/assets/images/home/Public-beta.avif")]'>
 						<Link className='absolute p-[4.16667vw] w-full h-full' to='#'>
-							<h1 className='text-[2.5rem] leading-[1.2rem] text-[#FDF900] font-medium'>
+							<h1 className='text-[2.5rem] leading-9 text-[#FDF900] font-medium'>
 								Live 12.1 is now in public beta
 							</h1>
 							<div className='mt-4'>
@@ -29,8 +29,8 @@ export default function Home() {
 						</Link>
 					</article>
 				</div>
-				<div className='row-start-4 row-end-8 col-start-9 col-end-13'>
-					<article className='h-[22.5vw] relative max-h-[320px] bg-cover bg-[url("src/assets/images/home/Focus-and-feel.avif")]'>
+				<div className='row-start-9 row-end-[16] md:row-start-4 md:row-end-8 col-start-2 md:col-start-9 col-end-13'>
+					<article className='md:h-[22.5vw] md:max-h-[320px] max-md:h-[60.66667vw] relative bg-cover bg-[url("src/assets/images/home/Focus-and-feel.avif")]'>
 						<Link className='absolute p-[2.08333vw] w-full h-full' to='#'>
 							<h1 className='text-xl leading-6 text-[#00ffff] font-medium'>
 								Focus and feel
@@ -49,8 +49,8 @@ export default function Home() {
 						</Link>
 					</article>
 				</div>
-				<div className='row-start-7 row-end-11 col-start-6 col-end-10'>
-					<article className='h-[22.5vw] relative max-h-[320px] bg-cover bg-[url("src/assets/images/home/new-in-note.avif")]'>
+				<div className='row-start-[14] md:row-start-7 row-end-[20] md:row-end-11 col-start-1 md:col-start-6 col-end-12 md:col-end-10'>
+					<article className='md:h-[22.5vw] md:max-h-[320px] relative max-md:h-[60.66667vw] bg-cover bg-[url("src/assets/images/home/new-in-note.avif")]'>
 						<Link className='absolute p-[2.08333vw] w-full h-full' to='#'>
 							<h1 className='text-xl leading-6 text-[#00FFAF] font-medium'>
 								See what’s new in Note

@@ -9,6 +9,10 @@ export default {
 			colors: {
 				blue: "#0000ff",
 				neutral: "#eee"
+			},
+			gridTemplateRows: {
+				// Simple 21 row grid
+				19: "repeat(19, minmax(25px, 1fr))"
 			}
 		}
 	},
