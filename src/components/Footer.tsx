@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../../public/ableton.svg";
+import Logo from "/ableton.svg";
 import ArrowRight from "../assets/ArrowRight";
 // import MenuArrowDown from "../assets/MenuArrowDown";
 import FacebookIcon from "../assets/FacebookIcon";
