@@ -41,7 +41,7 @@ export default function Navbar() {
 				</button>
 
 				<div
-					className={`max-lg:absolute max-lg:top-0 max-lg:px-[15px] max-lg:pt-[70px] lg:bg-white max-lg:bg-blue max-w-full h-fit max-lg:text-white max-lg:tracking-wide transition-all duration-500 ${
+					className={`max-lg:absolute max-lg:top-0 max-lg:px-[15px] max-lg:pt-[70px] lg:bg-white max-lg:bg-blue z-10 max-w-full h-fit max-lg:text-white max-lg:tracking-wide transition-all duration-500 ${
 						!navDrawer && windowWidth < 1024 && "-translate-y-full"
 					}`}
 					aria-hidden='false'

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Logo from "/ableton.svg";
-import ArrowRight from "../assets/ArrowRight";
 // import MenuArrowDown from "../assets/MenuArrowDown";
 import FacebookIcon from "../assets/FacebookIcon";
 import TwitterXIcon from "../assets/TwitterXIcon";
@@ -11,7 +10,7 @@ import TiktokIcon from "../assets/TiktokIcon";
 export default function Footer() {
 	return (
 		<footer>
-			<div className='max-xl:px-[8.33333vw] xl:px-[133.33333px]'>
+			<div className='max-xl:px-[8.33333vw] xl:px-[133.33333px] 2xl:pt-[133.33333px] max-2xl:pt-[8.33333vw]'>
 				<div className='max-xl:pb-[4.16667vw] xl:pb-[66.66667px]'>
 					<img
 						className='max-lg:w-[122px] lg:w-[188px]'
@@ -52,22 +51,13 @@ export default function Footer() {
 					<div className='lg:w-[30%] lg:order-1 max-xl:pb-[4.16667vw] xl:pb-[66.66667px]'>
 						<ul>
 							<li className='flex'>
-								<Link to='#'>Register Live or Push</Link>
-								<span>
-									<ArrowRight />
-								</span>
+								<Link to='#'>Register Live or Push ›</Link>
 							</li>
 							<li className='flex'>
-								<Link to='#'>About Ableton</Link>
-								<span>
-									<ArrowRight />
-								</span>
+								<Link to='#'>About Ableton ›</Link>
 							</li>
 							<li className='flex'>
-								<Link to='#'>Jobs</Link>
-								<span>
-									<ArrowRight />
-								</span>
+								<Link to='#'>Jobs ›</Link>
 							</li>
 						</ul>
 						<ul className='flex gap-3 pt-2'>
@@ -102,22 +92,15 @@ export default function Footer() {
 						<h3 className='font-medium'>Education</h3>
 						<ul>
 							<li className='flex'>
-								<Link to='#'>Offers for students and teachers</Link>
-								<span>
-									<ArrowRight />
-								</span>
+								<Link to='#'>Offers for students and teachers ›</Link>
 							</li>
 							<li className='flex'>
-								<Link to='#'>Ableton for the Classroom</Link>
-								<span>
-									<ArrowRight />
-								</span>
+								<Link to='#'>Ableton for the Classroom ›</Link>
 							</li>
 							<li className='flex'>
-								<Link to='#'>Ableton for Colleges and Universities</Link>
-								<span>
-									<ArrowRight />
-								</span>
+								<Link to='#'>
+									Ableton for Colleges and Universities ›
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -127,22 +110,13 @@ export default function Footer() {
 						<h3 className='font-medium'>Community</h3>
 						<ul>
 							<li className='flex'>
-								<Link to='#'>Find Ableton User Groups</Link>
-								<span>
-									<ArrowRight />
-								</span>
+								<Link to='#'>Find Ableton User Groups ›</Link>
 							</li>
 							<li className='flex'>
-								<Link to='#'>Find Certified Training</Link>
-								<span>
-									<ArrowRight />
-								</span>
+								<Link to='#'>Find Certified Training ›</Link>
 							</li>
 							<li className='flex'>
-								<Link to='#'>Become a Certified Trainer</Link>
-								<span>
-									<ArrowRight />
-								</span>
+								<Link to='#'>Become a Certified Trainer ›</Link>
 							</li>
 						</ul>
 					</div>
