@@ -13,11 +13,11 @@ This is the recreation of the [Ableton website](https://www.ableton.com/en/) usi
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/JosueDeLosSantos/blog-api-users-page.git
+    git clone https://github.com/JosueDeLosSantos/Ableton-Website-Recreation.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd blog-api-users-page
+    cd Ableton-Website-Recreation
     ```
 3. Install dependencies:
     ```bash
