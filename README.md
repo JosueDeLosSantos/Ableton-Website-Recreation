@@ -36,4 +36,4 @@ This website is fully responsive.
 
 ## Reference image
 
-<img width="200" src="./public/C1-Ableton.webp">
+<img width="200" src="./public/Ableton.jpg">
