@@ -11,10 +11,8 @@ import image9 from "../assets/images/home/image9.avif";
 import image10 from "../assets/images/home/image10.avif";
 import image11 from "../assets/images/home/image11.avif";
 import image12 from "../assets/images/home/image12.avif";
-import useWindowSize from "../hooks/windowSize";
 
 export default function Home() {
-	const { windowWidth } = useWindowSize();
 	return (
 		<>
 			<div className='grid grid-cols-12 max-md:grid-rows-19 md:grid-rows-10 pb-[8.33333vw] 2xl:pb-[133.33333px]'>
