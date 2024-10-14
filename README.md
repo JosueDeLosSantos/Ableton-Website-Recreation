@@ -2,6 +2,10 @@
 
 This is the recreation of the [Ableton website](https://www.ableton.com/en/) using React. This is also a challenge from [Frontend Practice](https://www.frontendpractice.com/)
 
+## Reference image
+
+<img width="200" src="./public/Ableton.jpg">
+
 See a live preview at:
 https://ableton-website-recreation.vercel.app/
 
@@ -36,7 +40,3 @@ https://ableton-website-recreation.vercel.app/
 2. Open your browser and navigate to `http://localhost:5173`.
 
 This website is fully responsive.
-
-## Reference image
-
-<img width="200" src="./public/Ableton.jpg">
