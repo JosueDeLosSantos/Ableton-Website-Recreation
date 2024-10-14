@@ -1,23 +1,23 @@
 import { Link } from "react-router-dom";
-import image1 from "../assets/images/home/image1.png";
-import image2 from "../assets/images/home/image2.png";
-import image3 from "../assets/images/home/image3.png";
-import image4 from "../assets/images/home/image4.avif";
-import image5 from "../assets/images/home/image5.avif";
-import image6 from "../assets/images/home/image6.avif";
-import image7 from "../assets/images/home/image7.avif";
-import image8 from "../assets/images/home/image8.avif";
-import image9 from "../assets/images/home/image9.avif";
-import image10 from "../assets/images/home/image10.avif";
-import image11 from "../assets/images/home/image11.avif";
-import image12 from "../assets/images/home/image12.avif";
+import image1 from "/image1.png";
+import image2 from "/image2.png";
+import image3 from "/image3.png";
+import image4 from "/image4.avif";
+import image5 from "/image5.avif";
+import image6 from "/image6.avif";
+import image7 from "/image7.avif";
+import image8 from "/image8.avif";
+import image9 from "/image9.avif";
+import image10 from "/image10.avif";
+import image11 from "/image11.avif";
+import image12 from "/image12.avif";
 
 export default function Home() {
 	return (
 		<>
 			<div className='grid grid-cols-12 max-md:grid-rows-19 md:grid-rows-10 pb-[8.33333vw] 2xl:pb-[133.33333px]'>
 				<div className='row-start-1 row-end-8 col-start-1 col-end-13 md:col-end-8'>
-					<article className='md:h-[38.83333vw] max-md:h-[70.66667vw] relative max-h-[620px] bg-cover bg-[url("src/assets/images/home/Public-beta.avif")]'>
+					<article className='md:h-[38.83333vw] max-md:h-[70.66667vw] relative max-h-[620px] bg-cover bg-[url("/Public-beta.avif")]'>
 						<Link className='absolute p-[4.16667vw] w-full h-full' to='#'>
 							<h1 className='text-[2.5rem] leading-9 text-[#FDF900] font-medium'>
 								Live 12.1 is now in public beta
@@ -32,7 +32,7 @@ export default function Home() {
 					</article>
 				</div>
 				<div className='row-start-9 row-end-[16] md:row-start-4 md:row-end-8 col-start-2 md:col-start-9 col-end-13'>
-					<article className='md:h-[22.5vw] md:max-h-[320px] max-md:h-[60.66667vw] relative bg-cover bg-[url("src/assets/images/home/Focus-and-feel.avif")]'>
+					<article className='md:h-[22.5vw] md:max-h-[320px] max-md:h-[60.66667vw] relative bg-cover bg-[url("/Focus-and-feel.avif")]'>
 						<Link className='absolute p-[2.08333vw] w-full h-full' to='#'>
 							<h1 className='text-xl leading-6 text-[#00ffff] font-medium'>
 								Focus and feel
@@ -47,7 +47,7 @@ export default function Home() {
 					</article>
 				</div>
 				<div className='row-start-[14] md:row-start-7 row-end-[20] md:row-end-11 col-start-1 md:col-start-6 col-end-12 md:col-end-10'>
-					<article className='md:h-[22.5vw] md:max-h-[320px] relative max-md:h-[60.66667vw] bg-cover bg-[url("src/assets/images/home/new-in-note.avif")]'>
+					<article className='md:h-[22.5vw] md:max-h-[320px] relative max-md:h-[60.66667vw] bg-cover bg-[url("/new-in-note.avif")]'>
 						<Link className='absolute p-[2.08333vw] w-full h-full' to='#'>
 							<h1 className='text-xl leading-6 text-[#00FFAF] font-medium'>
 								See what’s new in Note
